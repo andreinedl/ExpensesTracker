@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa63985-63c2-45db-aafe-b78b3d52a842" name="Changes" comment="">
+    <list default="true" id="0aa63985-63c2-45db-aafe-b78b3d52a842" name="Changes" comment="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/loginTab.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/registerTab.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/cupertino-dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,7 +44,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/andreinedl/ExpensesTracker.git&quot;,
-    &quot;accountId&quot;: &quot;2a8c48bd-8b7d-4dba-8636-4752ed151aad&quot;
+    &quot;accountId&quot;: &quot;29a7af49-1d52-4a9e-8b2e-a718b53194ef&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -41,6 +53,9 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -53,24 +68,42 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Andrei/IdeaProjects/ExpensesTracker&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Andrei/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker\LoginScreen" />
+      <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -84,12 +117,35 @@
       <updated>1731010412645</updated>
       <workItem from="1731010413862" duration="1096000" />
       <workItem from="1731187006543" duration="2420000" />
-      <workItem from="1731241690914" duration="510000" />
+      <workItem from="1731241690914" duration="2254000" />
+      <workItem from="1731243970333" duration="592000" />
+      <workItem from="1731275434688" duration="646000" />
+      <workItem from="1731276175677" duration="3286000" />
+      <workItem from="1731361798832" duration="3052000" />
+      <workItem from="1731427247930" duration="457000" />
+      <workItem from="1731619069559" duration="7241000" />
+      <workItem from="1731672867651" duration="1303000" />
+      <workItem from="1731674188404" duration="2345000" />
+      <workItem from="1731676557439" duration="6122000" />
+      <workItem from="1731682755195" duration="1411000" />
+      <workItem from="1731706433385" duration="6389000" />
     </task>
+    <task id="LOCAL-00001" summary="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)">
+      <option name="closed" value="true" />
+      <created>1731242426070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731242426070</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -107,5 +163,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import atlantafx.base.controls.CustomTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="540.0" prefWidth="886.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text layoutX="240.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="73.2080078125" />
+        <CustomTextField fx:id="usernameInput" blendMode="SRC_ATOP" focusTraversable="false" layoutX="246.0" layoutY="211.0" prefHeight="55.0" prefWidth="400.0" promptText="email@example.com">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </CustomTextField>
+        <Text layoutX="246.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="61.3115234375" />
+        <PasswordField fx:id="passwordInput" focusTraversable="false" layoutX="246.0" layoutY="317.0" prefHeight="55.0" prefWidth="400.0" promptText="* * * * * * * *" />
+        <Button layoutX="373.0" layoutY="398.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="139.0" text="Log in">
+            <styleClass>
+                <String fx:value="success" />
+            </styleClass>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Text layoutX="246.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Hello, please log in" textAlignment="CENTER" wrappingWidth="393.26373291015625">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
