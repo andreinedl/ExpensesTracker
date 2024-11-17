@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa63985-63c2-45db-aafe-b78b3d52a842" name="Changes" comment="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/loginTab.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/registerTab.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/cupertino-dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0aa63985-63c2-45db-aafe-b78b3d52a842" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginTabController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/RegisterTabController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/loginTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/loginTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/registerTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/registerTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/cupertino-dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/css/cupertino-dark.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,38 +63,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Andrei/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "Application.Run.executor": "Debug",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Andrei/AppData/Local/SceneBuilder/SceneBuilder.exe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker\css" />
       <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker\LoginScreen" />
       <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.andrein.expensestracker.Main" />
+      <module name="ExpensesTracker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -129,6 +137,7 @@
       <workItem from="1731676557439" duration="6122000" />
       <workItem from="1731682755195" duration="1411000" />
       <workItem from="1731706433385" duration="6389000" />
+      <workItem from="1731863532232" duration="2168000" />
     </task>
     <task id="LOCAL-00001" summary="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)">
       <option name="closed" value="true" />

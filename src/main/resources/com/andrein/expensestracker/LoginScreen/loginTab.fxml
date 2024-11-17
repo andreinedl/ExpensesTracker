@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import atlantafx.base.controls.CustomTextField?>
-<?import java.lang.String?>
+<?import java.net.URL?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="540.0" prefWidth="886.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="540.0" prefWidth="886.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrein.expensestracker.Controllers.LoginScreen.LoginTabController">
+    <stylesheets>
+        <URL value="@../css/cupertino-dark.css" />
+    </stylesheets>
     <children>
-        <Text layoutX="240.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="73.2080078125" />
-        <CustomTextField fx:id="usernameInput" blendMode="SRC_ATOP" focusTraversable="false" layoutX="246.0" layoutY="211.0" prefHeight="55.0" prefWidth="400.0" promptText="email@example.com">
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
-        </CustomTextField>
-        <Text layoutX="246.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="61.3115234375" />
-        <PasswordField fx:id="passwordInput" focusTraversable="false" layoutX="246.0" layoutY="317.0" prefHeight="55.0" prefWidth="400.0" promptText="* * * * * * * *" />
-        <Button layoutX="373.0" layoutY="398.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="139.0" text="Log in">
-            <styleClass>
-                <String fx:value="success" />
-            </styleClass>
-            <font>
-                <Font size="18.0" />
-            </font>
-        </Button>
-        <Text layoutX="246.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Hello, please log in" textAlignment="CENTER" wrappingWidth="393.26373291015625">
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-            <font>
-                <Font size="36.0" />
-            </font>
-        </Text>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: -color-base-8; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-width: 1; -fx-border-color: -color-border-muted;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                    <Text layoutX="183.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Arial;" text="Hello, please sign in using your credentials" textAlignment="CENTER" wrappingWidth="434.063720703125">
+                        <cursor>
+                            <Cursor fx:constant="DEFAULT" />
+                        </cursor>
+                        <font>
+                            <Font size="36.0" />
+                        </font>
+                    </Text>
+                    <Text layoutX="194.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="251.60799407958984" />
+                    <CustomTextField fx:id="usernameInput" blendMode="SRC_ATOP" focusTraversable="false" layoutX="194.0" layoutY="193.0" prefHeight="55.0" prefWidth="400.0" promptText="email@example.com">
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </CustomTextField>
+                    <PasswordField fx:id="passwordInput" focusTraversable="false" layoutX="194.0" layoutY="282.0" prefHeight="55.0" prefWidth="400.0" promptText="* * * * * * * *" />
+                    <Text layoutX="200.0" layoutY="273.0" strokeType="INSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="91.71155548095703" />
+                    <Button layoutX="325.0" layoutY="354.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="139.0" styleClass="accent" text="Log in">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Button>
+                  <Hyperlink fx:id="createAccountLink" layoutX="293.0" layoutY="415.0" text="No account? Click here to register." />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
     </children>
 </AnchorPane>

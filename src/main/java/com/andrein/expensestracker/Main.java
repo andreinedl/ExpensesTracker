@@ -9,7 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-
 import java.io.IOException;
 
 public class Main extends Application {
@@ -23,8 +22,8 @@ public class Main extends Application {
         stage.setResizable(false);
         stage.show();
         Application.setUserAgentStylesheet(new CupertinoDark().getUserAgentStylesheet());
-        stage.setTitle("Hello!");
-        VBox.setMargin(scene.getRoot(), new javafx.geometry.Insets(101));
+      //  stage.setTitle("Hello!");
+      //  VBox.setMargin(scene.getRoot(), new javafx.geometry.Insets(101));
         
     }
 
