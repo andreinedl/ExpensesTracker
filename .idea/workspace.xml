@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa63985-63c2-45db-aafe-b78b3d52a842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginTabController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/RegisterTabController.java" afterDir="false" />
+    <list default="true" id="0aa63985-63c2-45db-aafe-b78b3d52a842" name="Changes" comment="Login screen controllers, added the Register screen">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/DBTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/db/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/loginTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/loginTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/registerTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/registerTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/cupertino-dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/css/cupertino-dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,10 @@
     &quot;accountId&quot;: &quot;29a7af49-1d52-4a9e-8b2e-a718b53194ef&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -68,12 +70,14 @@
     "Application.HelloApplication.executor": "Run",
     "Application.Main.executor": "Debug",
     "Application.Run.executor": "Debug",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -87,18 +91,23 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker" />
       <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker\css" />
       <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker\LoginScreen" />
-      <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Run">
     <configuration name="Run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.andrein.expensestracker.Main" />
       <module name="ExpensesTracker" />
@@ -106,6 +115,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Run" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -137,7 +164,13 @@
       <workItem from="1731676557439" duration="6122000" />
       <workItem from="1731682755195" duration="1411000" />
       <workItem from="1731706433385" duration="6389000" />
-      <workItem from="1731863532232" duration="2168000" />
+      <workItem from="1731863532232" duration="2687000" />
+      <workItem from="1731873067177" duration="45000" />
+      <workItem from="1731934754292" duration="30000" />
+      <workItem from="1731935229763" duration="636000" />
+      <workItem from="1731958876673" duration="4226000" />
+      <workItem from="1732000927616" duration="1877000" />
+      <workItem from="1732011967848" duration="4153000" />
     </task>
     <task id="LOCAL-00001" summary="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)">
       <option name="closed" value="true" />
@@ -147,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731242426070</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Login screen controllers, added the Register screen">
+      <option name="closed" value="true" />
+      <created>1731865841889</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731865841889</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +216,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)" />
+    <MESSAGE value="Login screen controllers, added the Register screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login screen controllers, added the Register screen" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.ConnectException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

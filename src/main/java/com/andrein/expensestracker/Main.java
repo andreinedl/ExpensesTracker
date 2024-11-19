@@ -14,6 +14,9 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+        DBTest dbTest = new DBTest();
+        dbTest.test();
+
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("LoginScreen/login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 900, 600);
         stage.requestFocus();
