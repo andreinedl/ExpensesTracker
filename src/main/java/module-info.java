@@ -8,7 +8,9 @@ module com.andrein.expensestracker {
     requires javafx.base;
     requires javafx.fxml;
     requires javafx.controls;
-    requires jakarta.persistence;
+    requires java.naming;
+    requires sql2o;
+    requires java.sql;
 
     opens com.andrein.expensestracker to javafx.fxml;
 

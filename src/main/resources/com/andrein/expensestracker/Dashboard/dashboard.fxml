@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../css/cupertino-dark.css" />
+    </stylesheets>
+   <children>
+      <TabPane style="-fx-tab-min-height: 45; -fx-tab-min-width: 150;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Dashboard">
+              <graphic>
+                  <FontIcon iconLiteral="fas-home" iconSize="16" />
+              </graphic>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" />
+            </content>
+          </Tab>
+            <Tab text="Add">
+                <graphic>
+                    <FontIcon iconLiteral="fas-plus" iconSize="16" />
+                </graphic>
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+          <Tab text="Analyzer">
+              <graphic>
+                  <FontIcon iconLiteral="far-chart-bar" iconSize="16" />
+              </graphic>
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" />
+              </content>
+          </Tab>
+          <Tab text="User Info">
+              <graphic>
+                  <FontIcon iconLiteral="fas-user" iconSize="16" />
+              </graphic>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

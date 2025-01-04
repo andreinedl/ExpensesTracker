@@ -38,5 +38,5 @@ build/
 ### Mac OS ###
 .DS_Store
 
-## Docker ##
-docker-compose.yml
+## Database ##
+expensestracker.db
