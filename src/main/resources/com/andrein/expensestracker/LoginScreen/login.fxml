@@ -4,27 +4,29 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
 <!-- TAB DIMENSIONS = 886x560 -->
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-color-accent-emphasis: #FF7F50;" styleClass="root" stylesheets="@../css/cupertino-dark.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrein.expensestracker.Controllers.LoginScreen.LoginScreenController" fx:id="root" id="root">
+<AnchorPane id="root" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-color-accent-emphasis: #FF7F50;" styleClass="root" stylesheets="@../css/cupertino-dark.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrein.expensestracker.Controllers.LoginScreen.LoginScreenController">
     <stylesheets>
         <URL value="@../css/cupertino-dark.css" />
     </stylesheets>
     <children>
         <TabPane fx:id="tabs" prefHeight="420.0" prefWidth="543.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
             <tabs>
-                <Tab fx:id="loginTab" closable="false" text="Login">
+                <Tab closable="false" text="Login">
                     <content>
-                        <fx:include source="loginTab.fxml" />
+                        <fx:include fx:id="loginTab" source="loginTab.fxml" />
                     </content>
                 </Tab>
-                <Tab fx:id="registerTab" closable="false" text="Register">
+                <Tab closable="false" text="Register">
                     <content>
-                        <fx:include source="registerTab.fxml" />
+                        <fx:include fx:id="registerTab" source="registerTab.fxml" />
                     </content>
                 </Tab>
             </tabs>
         </TabPane>
+      <VBox fx:id="notificationContainer" layoutX="15.0" layoutY="500.0" prefHeight="85.0" prefWidth="300.0" />
     </children>
 </AnchorPane>

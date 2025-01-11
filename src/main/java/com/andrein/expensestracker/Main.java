@@ -4,6 +4,7 @@ import atlantafx.base.theme.CupertinoDark;
 import atlantafx.base.theme.PrimerDark;
 import atlantafx.base.theme.Styles;
 import com.andrein.expensestracker.Controllers.Database;
+import com.andrein.expensestracker.Models.User;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,13 +15,15 @@ import java.io.IOException;
 import com.andrein.expensestracker.Controllers.Database;
 
 public class Main extends Application {
+    User loggedInUser;
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("LoginScreen/login.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 900, 600);
+        FXMLLoader loginPageFile = new FXMLLoader(Main.class.getResource("LoginScreen/login.fxml"));
+        Scene scene = new Scene(loginPageFile.load(), 900, 600);
         stage.requestFocus();
-        stage.setTitle("Hello!");
         stage.setScene(scene);
+        stage.setTitle("Expenses Tracker");
         stage.setResizable(false);
         stage.show();
         Application.setUserAgentStylesheet(new CupertinoDark().getUserAgentStylesheet());

@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa63985-63c2-45db-aafe-b78b3d52a842" name="Changes" comment="Login screen controllers, added the Register screen">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/DBTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/db/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="0aa63985-63c2-45db-aafe-b78b3d52a842" name="Changes" comment="Switch to sqlite3 using Sql2o">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/MainScreen/MainScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/UserSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/Dashboard/DashboardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/LoginTabController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/RegisterTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Controllers/LoginScreen/RegisterTabController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrein/expensestracker/Models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/Dashboard/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/MainScreen/mainscreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/loginTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/LoginScreen/loginTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/andrein/expensestracker/db/hibernate.cfg.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +54,10 @@
     &quot;accountId&quot;: &quot;29a7af49-1d52-4a9e-8b2e-a718b53194ef&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -65,41 +77,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Debug",
-    "Application.Run.executor": "Debug",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Andrei/AppData/Local/SceneBuilder/SceneBuilder.exe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Run.executor&quot;: &quot;Debug&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
+    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Andrei/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5275862&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;,
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Andrei\Documents\IntelliJ\ExpensesTracker\src\main\resources\com\andrein\expensestracker" />
@@ -137,8 +152,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -170,7 +185,33 @@
       <workItem from="1731935229763" duration="636000" />
       <workItem from="1731958876673" duration="4226000" />
       <workItem from="1732000927616" duration="1877000" />
-      <workItem from="1732011967848" duration="4153000" />
+      <workItem from="1732011967848" duration="5128000" />
+      <workItem from="1732031248744" duration="1111000" />
+      <workItem from="1732036579847" duration="670000" />
+      <workItem from="1732046112558" duration="2991000" />
+      <workItem from="1732635806338" duration="152000" />
+      <workItem from="1732983237424" duration="2866000" />
+      <workItem from="1733002292422" duration="2763000" />
+      <workItem from="1733088757020" duration="1498000" />
+      <workItem from="1733128381997" duration="3067000" />
+      <workItem from="1733167786168" duration="6198000" />
+      <workItem from="1733237769376" duration="13000" />
+      <workItem from="1733417061338" duration="6229000" />
+      <workItem from="1733593297665" duration="2000" />
+      <workItem from="1733846648247" duration="7000" />
+      <workItem from="1735990397145" duration="523000" />
+      <workItem from="1735991057346" duration="618000" />
+      <workItem from="1736007285022" duration="14997000" />
+      <workItem from="1736120155106" duration="1103000" />
+      <workItem from="1736161012579" duration="9928000" />
+      <workItem from="1736177833373" duration="504000" />
+      <workItem from="1736340464306" duration="35000" />
+      <workItem from="1736437606279" duration="8968000" />
+      <workItem from="1736458823641" duration="1452000" />
+      <workItem from="1736511749543" duration="7682000" />
+      <workItem from="1736540505126" duration="6825000" />
+      <workItem from="1736591244330" duration="5375000" />
+      <workItem from="1736634305667" duration="1513000" />
     </task>
     <task id="LOCAL-00001" summary="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)">
       <option name="closed" value="true" />
@@ -188,7 +229,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731865841889</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Init the DB implementation using the Hibernate library">
+      <option name="closed" value="true" />
+      <created>1732019351050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732019351050</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Switch to sqlite3 using Sql2o">
+      <option name="closed" value="true" />
+      <created>1736023870749</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736023870749</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +274,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add AtlantaFX as dependency (https://github.com/mkpaz/atlantafx)" />
     <MESSAGE value="Login screen controllers, added the Register screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login screen controllers, added the Register screen" />
+    <MESSAGE value="Init the DB implementation using the Hibernate library" />
+    <MESSAGE value="Switch to sqlite3 using Sql2o" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switch to sqlite3 using Sql2o" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -228,6 +287,11 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression=".equals(password)) {&#10;                loggedInUser = getUserData(username);" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

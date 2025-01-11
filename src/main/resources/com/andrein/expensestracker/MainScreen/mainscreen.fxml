@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import atlantafx.base.controls.Card?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane id="root" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrein.expensestracker.Controllers.MainScreen.MainScreenController">
+    <stylesheets>
+        <URL value="@../css/cupertino-dark.css" />
+    </stylesheets>
+   <children>
+      <TabPane style="-fx-tab-min-height: 45; -fx-tab-min-width: 150;" styleClass="classic" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab disable="true" text="Expenses Tracker">
+                <graphic>
+                    <FontIcon iconLiteral="fas-wallet" iconSize="32" />
+                </graphic>
+            </Tab>
+          <Tab text="Dashboard">
+              <graphic>
+                  <FontIcon iconLiteral="fas-home" iconSize="16" />
+              </graphic>
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="greetingTextDash" layoutX="24.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, Lorem Ipsum" wrappingWidth="417.62750244140625">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <Card layoutX="24.0" layoutY="71.0" prefHeight="110.0" prefWidth="270.0" style="-fx-background-color: -color-success-8;" />
+                        <Card layoutX="340.0" layoutY="71.0" prefHeight="110.0" prefWidth="270.0" />
+                        <Card layoutX="653.0" layoutY="71.0" prefHeight="110.0" prefWidth="270.0" />
+                        <ProgressBar fx:id="availableBudgetProgressBar" layoutX="35.0" layoutY="152.0" prefHeight="20.0" prefWidth="247.0" progress="0.51" />
+                        <Text fx:id="availableBudgetSum" layoutX="109.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3000 / 5000 RON" wrappingWidth="99.22756958007812">
+                           <font>
+                              <Font name="Microsoft Tai Le" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="availableBudgetText" layoutX="75.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available budget" wrappingWidth="168.82751083374023">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="biggestExpenseText" layoutX="393.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biggest expense" wrappingWidth="163.22747802734375">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="mostExpensiveText" layoutX="667.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most expensive category">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="biggestExpenseName" layoutX="411.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALTEX ROMANIA" />
+                        <Circle fill="DODGERBLUE" layoutX="376.0" layoutY="142.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" styleClass="accent" />
+                        <Text fx:id="biggestExpensePrice" layoutX="411.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="700 RON" />
+                        <FontIcon fx:id="biggestExpenseIcon" layoutX="362.0" layoutY="148.0" wrappingWidth="28.800048828125" />
+                        <Circle fill="DODGERBLUE" layoutX="691.0" layoutY="144.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" styleClass="accent" />
+                        <Text fx:id="mostExpensiveName" layoutX="731.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Living" />
+                        <Text fx:id="mostExpensivePrice" layoutX="731.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2300 RON" />
+                        <FontIcon fx:id="mostExpensiveIcon" layoutX="677.0" layoutY="150.0" wrappingWidth="28.800048828125" />
+                        <PieChart fx:id="dashboardPieChart" layoutX="24.0" layoutY="217.0" prefHeight="340.0" prefWidth="400.0" />
+                     </children></AnchorPane>
+              </content>
+          </Tab>
+            <Tab text="Add">
+                <graphic>
+                    <FontIcon iconLiteral="fas-plus" iconSize="16" />
+                </graphic>
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+          <Tab text="Analyzer">
+              <graphic>
+                  <FontIcon iconLiteral="far-chart-bar" iconSize="16" />
+              </graphic>
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" />
+              </content>
+          </Tab>
+          <Tab text="User Info">
+              <graphic>
+                  <FontIcon iconLiteral="fas-user" iconSize="16" />
+              </graphic>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

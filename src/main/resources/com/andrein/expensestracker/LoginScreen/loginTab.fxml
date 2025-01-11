@@ -30,19 +30,19 @@
                         </font>
                     </Text>
                     <Text layoutX="194.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="251.60799407958984" />
-                    <CustomTextField fx:id="usernameInput" blendMode="SRC_ATOP" focusTraversable="false" layoutX="194.0" layoutY="193.0" prefHeight="55.0" prefWidth="400.0" promptText="email@example.com">
+                    <CustomTextField fx:id="usernameInput" blendMode="SRC_ATOP" focusTraversable="false" layoutX="194.0" layoutY="193.0" prefHeight="55.0" prefWidth="400.0" promptText="exampleusername" style="-fx-focus-traversable: true;">
                         <cursor>
                             <Cursor fx:constant="HAND" />
                         </cursor>
                     </CustomTextField>
-                    <PasswordField fx:id="passwordInput" focusTraversable="false" layoutX="194.0" layoutY="282.0" prefHeight="55.0" prefWidth="400.0" promptText="* * * * * * * *" />
+                    <PasswordField fx:id="passwordInput" focusTraversable="false" layoutX="194.0" layoutY="282.0" prefHeight="55.0" prefWidth="400.0" promptText="* * * * * * * *" style="-fx-focus-traversable: true;" />
                     <Text layoutX="200.0" layoutY="273.0" strokeType="INSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="91.71155548095703" />
-                    <Button layoutX="325.0" layoutY="354.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="139.0" styleClass="accent" text="Log in">
+                    <Button fx:id="loginButton" layoutX="325.0" layoutY="354.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="40.0" prefWidth="139.0" style="-fx-focus-traversable: false;" styleClass="accent" text="Log in">
                         <font>
                             <Font size="18.0" />
                         </font>
                     </Button>
-                  <Hyperlink fx:id="createAccountLink" layoutX="293.0" layoutY="415.0" text="No account? Click here to register." />
+                  <Hyperlink fx:id="createAccountLink" layoutX="293.0" layoutY="415.0" onAction="#createAccountClick" text="No account? Click here to register." />
                </children>
             </Pane>
          </center>

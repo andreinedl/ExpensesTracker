@@ -13,8 +13,11 @@ module com.andrein.expensestracker {
     requires java.sql;
 
     opens com.andrein.expensestracker to javafx.fxml;
+    opens com.andrein.expensestracker.Models to sql2o;
 
     exports com.andrein.expensestracker;
     exports com.andrein.expensestracker.Controllers.LoginScreen;
+    exports com.andrein.expensestracker.Controllers.MainScreen;
     opens com.andrein.expensestracker.Controllers.LoginScreen to javafx.fxml;
+    opens com.andrein.expensestracker.Controllers.MainScreen to javafx.fxml;
 }
