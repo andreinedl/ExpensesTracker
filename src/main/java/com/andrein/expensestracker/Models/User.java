@@ -4,6 +4,7 @@ public class User {
     private String username;
     private String firstName;
     private String lastName;
+    private Integer budget;
 
     public int getId() {
         return id;
@@ -22,6 +23,8 @@ public class User {
     }
 
     public String getFullName() { return firstName + " " + lastName; }
+
+    public Integer getBudget() { return budget; }
 
     public User() {};
 

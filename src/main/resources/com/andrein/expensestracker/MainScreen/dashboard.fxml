@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import atlantafx.base.controls.Card?>
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrein.expensestracker.Controllers.MainScreen.DashboardTabController">
+    <stylesheets>
+        <URL value="@../css/cupertino-dark.css" />
+    </stylesheets>
+    <children>
+        <Text fx:id="greetingText" layoutX="24.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, Lorem Ipsum" wrappingWidth="417.62750244140625">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Text>
+        <Card layoutX="24.0" layoutY="71.0" prefHeight="110.0" prefWidth="270.0" style="-fx-background-color: -color-success-8;" />
+        <Card layoutX="340.0" layoutY="71.0" prefHeight="110.0" prefWidth="270.0" />
+        <Card layoutX="653.0" layoutY="71.0" prefHeight="110.0" prefWidth="270.0" />
+        <ProgressBar fx:id="availableBudgetProgressBar" layoutX="35.0" layoutY="152.0" prefHeight="20.0" prefWidth="247.0" progress="0.51" />
+      <StackPane layoutX="24.0" layoutY="71.0" prefHeight="110.0" prefWidth="270.0">
+         <children>
+              <Text fx:id="availableBudgetSum" strokeType="OUTSIDE" strokeWidth="0.0" text="3000 / 5000 RON" wrappingWidth="102.42755126953125">
+                  <font>
+                      <Font size="13.0" />
+                  </font>
+              </Text>
+         </children>
+      </StackPane>
+        <Text fx:id="availableBudgetText" layoutX="75.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available budget" wrappingWidth="168.82751083374023">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text fx:id="biggestExpenseText" layoutX="393.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biggest expense" wrappingWidth="163.22747802734375">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text fx:id="mostExpensiveText" layoutX="667.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most expensive category">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text fx:id="biggestExpenseName" layoutX="411.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALTEX ROMANIA" />
+        <Text fx:id="biggestExpensePrice" layoutX="411.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="700 RON" />
+        <StackPane alignment="CENTER" layoutX="667.0" layoutY="120.0" prefHeight="48.0" prefWidth="48.0">
+            <children>
+                <Circle fill="#1f93ff00" radius="24.0" stroke="#4040408e" strokeType="INSIDE" styleClass="accent" />
+                <FontIcon fx:id="mostExpensiveIcon" iconLiteral="fas-dollar-sign" iconSize="32" />
+            </children>
+        </StackPane>
+        <StackPane alignment="CENTER" layoutX="351.0" layoutY="120.0" prefHeight="48.0" prefWidth="48.0">
+            <children>
+                <Circle fill="#20384f00" radius="24.0" stroke="#4040408f" strokeType="INSIDE" styleClass="accent" />
+                <FontIcon fx:id="biggestExpenseIcon" iconLiteral="fas-shopping-cart" iconSize="32" />
+            </children>
+        </StackPane>
+        <Text fx:id="mostExpensiveCategoryName" layoutX="731.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Living" />
+        <Text fx:id="mostExpensiveCategoryPrice" layoutX="731.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2300 RON" />
+      <Group layoutX="24.0" layoutY="202.0">
+         <children>
+            <Card prefHeight="369.0" prefWidth="400.0" />
+              <PieChart fx:id="PieChart" prefHeight="312.0" prefWidth="400.0" />
+         </children>
+      </Group>
+      <TableView fx:id="last7daysExpenses" editable="true" layoutX="444.0" layoutY="220.0" prefHeight="353.0" prefWidth="478.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="dateColumn" editable="false" prefWidth="90.4000244140625" resizable="false" text="Date" />
+          <TableColumn fx:id="merchantColumn" editable="false" prefWidth="148.0" resizable="false" text="Merchant" />
+            <TableColumn fx:id="descriptionColumn" editable="false" prefWidth="144.79998779296875" resizable="false" text="Description" />
+            <TableColumn fx:id="priceColumn" editable="false" prefWidth="102.4000244140625" resizable="false" text="Price" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Text layoutX="604.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 7 days expenses:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

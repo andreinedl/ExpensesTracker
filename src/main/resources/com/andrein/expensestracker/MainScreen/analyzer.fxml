@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrein.expensestracker.Controllers.MainScreen.AnalyzerTabController">
+    <stylesheets>
+        <URL value="@../css/cupertino-dark.css" />
+    </stylesheets>
+   <children>
+      <ComboBox fx:id="monthPicker" layoutX="285.0" layoutY="14.0" onAction="#setExpensesTable" prefHeight="30.0" prefWidth="161.0" />
+      <Text layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View all expenses for month:" wrappingWidth="261.6276397705078">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TableView fx:id="expensesTable" layoutX="26.0" layoutY="52.0" prefHeight="232.0" prefWidth="897.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="dateColumn" editable="false" prefWidth="120.79995346069336" text="Date" />
+          <TableColumn fx:id="merchantColumn" editable="false" prefWidth="188.0000762939453" text="Merchant" />
+            <TableColumn fx:id="descriptionColumn" editable="false" prefWidth="246.4000244140625" text="Description" />
+            <TableColumn fx:id="categoryColumn" editable="false" prefWidth="177.60003662109375" text="Category" />
+            <TableColumn fx:id="priceColumn" editable="false" minWidth="0.0" prefWidth="154.39996337890625" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -4,6 +4,7 @@ import atlantafx.base.theme.CupertinoDark;
 import atlantafx.base.theme.PrimerDark;
 import atlantafx.base.theme.Styles;
 import com.andrein.expensestracker.Controllers.Database;
+import com.andrein.expensestracker.Controllers.MainScreen.MainScreenController;
 import com.andrein.expensestracker.Models.User;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,40 +1,62 @@
 package com.andrein.expensestracker.Controllers.MainScreen;
 
-import com.andrein.expensestracker.Main;
+import atlantafx.base.controls.Message;
+import atlantafx.base.theme.Styles;
 import com.andrein.expensestracker.Models.User;
 import com.andrein.expensestracker.UserSession;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import javafx.animation.PauseTransition;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.chart.PieChart;
-import javafx.scene.text.Text;
-
-import java.util.Random;
+import javafx.scene.control.TabPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.util.Duration;
 
 public class MainScreenController {
+    @FXML
+    private DashboardTabController dashboardTabController;
+    @FXML
+    private AddExpenseTabController addExpenseTabController;
+    @FXML
+    private UserInfoTabController userInfoTabController;
+    @FXML
+    private AnalyzerTabController analyzerTabController;
     User loggedInUser = UserSession.getInstance().getLoggedUser();
-    @FXML
-    private Text greetingTextDash;
 
     @FXML
-    private PieChart dashboardPieChart;
+    private VBox notificationContainer;
 
-    Random rand = new Random();
-    ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
-            new PieChart.Data("Living", rand.nextInt(10, 30)),
-            new PieChart.Data("Entertainment", rand.nextInt(10, 30)),
-            new PieChart.Data("Health", rand.nextInt(10, 30)),
-            new PieChart.Data("Food", rand.nextInt(10, 30))
-    );
+    @FXML
+    private TabPane tabPane;
 
     @FXML
     private void initialize() {
         System.out.printf("Main Screen controller initialized");
-        greetingTextDash.setText("Hello, " + loggedInUser.getFullName());
-        dashboardPieChart.setData(pieChartData);
-        dashboardPieChart.setTitle("Expenses distribution");
-        dashboardPieChart.setPrefHeight(340);
+        showLoginSuccessNotif();
+        userInfoTabController.setMainScreenController(this);
+        dashboardTabController.setMainScreenController(this);
+        addExpenseTabController.setMainScreenController(this);
+        analyzerTabController.setMainScreenController(this);
     }
+
+    private void showLoginSuccessNotif() {
+        var notification = new Message("Success", "You have been logged in successfully");
+
+        notification.setMaxHeight(80);
+        //clear the notification container before a new notification is displayed
+        notificationContainer.getChildren().clear();
+        notification.getStyleClass().add(Styles.SUCCESS);
+        notificationContainer.getChildren().add(notification);
+
+        PauseTransition delay = new PauseTransition(Duration.seconds(3));
+        delay.setOnFinished(event -> notificationContainer.getChildren().remove(notification));
+        delay.play();
+    }
+
+    public void refreshUI() {
+        dashboardTabController.refreshUI();
+        userInfoTabController.refreshUI();
+        analyzerTabController.refreshUI();
+    }
+
 }

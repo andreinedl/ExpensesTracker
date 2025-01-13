@@ -21,8 +21,8 @@ public class Database {
 
     private void createTables() {
         try (Connection connection = sql2o.open()) {
-            connection.createQuery("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username VARCHAR(255), password VARCHAR(255), firstName VARCHAR(255), lastName VARCHAR(255))").executeUpdate();
-            connection.createQuery("CREATE TABLE IF NOT EXISTS expenses (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, price REAL, description VARCHAR(255), date VARCHAR(255), category VARCHAR(255), FOREIGN KEY (userId) REFERENCES users(id))").executeUpdate();
+            connection.createQuery("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username VARCHAR(255), password VARCHAR(255), firstName VARCHAR(255), lastName VARCHAR(255), budget INTEGER default 0)").executeUpdate();
+            connection.createQuery("CREATE TABLE IF NOT EXISTS expenses (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, merchant VARCHAR(255), price REAL, description VARCHAR(255), day INTEGER, month INTEGER, year INTEGER, category VARCHAR(255), FOREIGN KEY (userId) REFERENCES users(id))").executeUpdate();
         }
     }
 
@@ -38,21 +38,28 @@ public class Database {
         }
     }
 
-    public void createExpense(int userId, float price, String description, String date, String category) {
+    public boolean createExpense(int userId, double price, String merchant, String description, Integer day, Integer month, Integer year, String category) {
         try (Connection connection = sql2o.open()) {
-            connection.createQuery("INSERT INTO expenses (userId, price, description, date, category) VALUES (:userId, :price, :description, :date, :category)")
+            connection.createQuery("INSERT INTO expenses (userId, price, merchant, description, day, month, year, category) VALUES (:userId, :price, :merchant, :description, :day, :month, :year, :category)")
                     .addParameter("userId", userId)
                     .addParameter("price", price)
+                    .addParameter("merchant", merchant)
                     .addParameter("description", description)
-                    .addParameter("date", date)
+                    .addParameter("day", day)
+                    .addParameter("month", month)
+                    .addParameter("year", year)
                     .addParameter("category", category)
                     .executeUpdate();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
     }
 
     public List<User> getUsers() {
         try (Connection connection = sql2o.open()) {
-            return connection.createQuery("SELECT id, username, firstName, lastName FROM users").executeAndFetch(User.class);
+            return connection.createQuery("SELECT id, username, firstName, lastName, budget FROM users").executeAndFetch(User.class);
         }
     }
 
@@ -67,7 +74,7 @@ public class Database {
     public User getUserData(String username) {
         try (Connection connection = sql2o.open()) {
             System.out.println("Fetching user data for username: " + username);
-            return connection.createQuery("SELECT id, username, firstName, lastName FROM users WHERE username = :username")
+            return connection.createQuery("SELECT id, username, firstName, lastName, budget FROM users WHERE username = :username")
                     .addParameter("username", username)
                     .executeAndFetchFirst(User.class);
         } catch (Exception e) {
